@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{3901e059-760d-47b6-b750-c50511d1f3e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{3516d8e4-d681-4a09-aee2-dc1866191eff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{11ecabc2-1f15-485c-b0b3-76f4d9cc9531}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component">
+      <UniqueIdentifier>{73b5f7cd-74a3-47e2-a1e8-4eff5f6ef780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{440342dc-8dec-4229-89b7-265d031f62b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render">
+      <UniqueIdentifier>{3677e1ee-195c-41b8-ad5a-aaa4c40ebbf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{757e25b4-8d78-483c-9bf1-f74787736248}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry">
+      <UniqueIdentifier>{ac772264-f99d-4689-802e-270b90123977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\InputAssembler">
+      <UniqueIdentifier>{b8530b82-0e85-48d2-84af-0e412fd4139e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{81dbfa73-eb56-48fb-b407-2297aa5f65cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{9517194f-799f-4d3f-ae7e-dd8220171c81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Event">
+      <UniqueIdentifier>{b95c080f-98a6-4631-a501-9e12399dfcc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI">
+      <UniqueIdentifier>{52025736-8201-4289-b47e-c4a223829451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{2b6f534b-95ac-40e9-9a60-f55daf9b0c9f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\Test.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Application.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Settings.h" />
+    <ClInclude Include="Include\ServiceLocator.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Log.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Timer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\StandardEngineFramework.h" />
+    <ClInclude Include="Include\Engine.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Singleton.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Keyboard.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Mouse.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Component.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\DataStructures.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\LinearMath.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\IScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SceneView.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Transform.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MathUtils.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\IObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Object.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GameObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\VertexTypes.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\VertexBuffer.h">
+      <Filter>Render\InputAssembler</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\IndexBuffer.h">
+      <Filter>Render\InputAssembler</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\DirectXDevice.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Renderer.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\RenderStructs.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Camera.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\TriangleObj.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\TestScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Enumerators.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Layer.h">
+      <Filter>Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\IObjectFactory.h">
+      <Filter>Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GeometryFactory.h">
+      <Filter>Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\TriangleComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GameObjectManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\LogicManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\RenderManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\UIDGen.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\IComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Path.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\cpplinq.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\EventDispatcher.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\EventTypes.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BrainTree.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ObjectPool.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ObjLoader.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Fighter.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CString.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Test.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ServiceLocator.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Log.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Timer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Keyboard.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Mouse.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\LinearMath.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\IScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Transform.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MathUtils.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\IObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\VertexTypes.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\VertexBuffer.cpp">
+      <Filter>Render\InputAssembler</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\IndexBuffer.cpp">
+      <Filter>Render\InputAssembler</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DirectXDevice.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RenderStructs.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Camera.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TriangleObj.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TestScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Layer.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\IObjectFactory.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GeometryFactory.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TriangleComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameObjectManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\LogicManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RenderManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UIDGen.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\IComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Path.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\EventDispatcher.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Fighter.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CString.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
