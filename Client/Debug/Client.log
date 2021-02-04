@@ -1,3 +1,30 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(368,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-  Client.vcxproj -> C:\Dev\HyEngineSample\Client\Bin\Client.exe
+  Test2.cpp
+  Main.cpp
+c:\dev\sr_project\reference\include\gameobject.h(102): warning C4099: 'IScene': type name first seen using 'struct' now seen using 'class'
+  c:\dev\sr_project\reference\include\iscene.h(6): note: see declaration of 'IScene'
+c:\dev\sr_project\reference\include\engine.h(32): warning C4099: 'IScene': type name first seen using 'struct' now seen using 'class'
+  c:\dev\sr_project\reference\include\iscene.h(6): note: see declaration of 'IScene'
+c:\dev\sr_project\reference\include\engine.h(72): warning C4251: 'Engine::m_levelLoadQueue': class 'std::queue<int,std::deque<_Ty,std::allocator<_Ty>>>' needs to have dll-interface to be used by clients of class 'Engine'
+          with
+          [
+              _Ty=int
+          ]
+  c:\dev\sr_project\reference\include\engine.h(72): note: see declaration of 'std::queue<int,std::deque<_Ty,std::allocator<_Ty>>>'
+          with
+          [
+              _Ty=int
+          ]
+c:\dev\sr_project\reference\include\engine.h(79): warning C4251: 'Engine::m_pScenes': class 'std::vector<Scene *,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'Engine'
+          with
+          [
+              _Ty=Scene *
+          ]
+  c:\dev\sr_project\reference\include\engine.h(79): note: see declaration of 'std::vector<Scene *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Scene *
+          ]
+  Generating Code...
+  Client.vcxproj -> C:\Dev\SR_Project\Client\Bin\Client.exe
   Client.vcxproj -> Bin\Client.pdb (Partial PDB)

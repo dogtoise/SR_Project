@@ -20,5 +20,6 @@
     <ClInclude Include="Include\Test2.h">
       <Filter>TestFilter</Filter>
     </ClInclude>
+    <ClInclude Include="Include\stdafx.h" />
   </ItemGroup>
 </Project>

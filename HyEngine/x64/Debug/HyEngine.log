@@ -1,0 +1,74 @@
+﻿  VertexTypes.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  VertexBuffer.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  UIDGen.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  TriangleObj.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  TriangleComponent.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  Transform.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  Timer.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  TestScene.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  Test.cpp
+  CString.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  ServiceLocator.cpp
+  Scene.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  RenderStructs.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  RenderManager.cpp
+  Renderer.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  Path.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  Object.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  Mouse.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  MathUtils.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  LogicManager.cpp
+  Generating Code...
+  Compiling...
+  Log.cpp
+  LinearMath.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  Layer.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  Keyboard.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  IScene.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  IObjectFactory.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  IObject.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  IndexBuffer.cpp
+  IComponent.cpp
+  GeometryFactory.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  GameObjectManager.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  GameObject.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  Fighter.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  EventDispatcher.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  Engine.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  DirectXDevice.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  Component.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  Camera.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  Application.cpp
+c:\dev\sr_project\hyengine\include\standardengineframework.h(22): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory
+  Generating Code...
