@@ -1,19 +1,18 @@
 #include "StandardEngineFramework.h"
 #include "..\Include\Application.h"
 
-
+HWND g_hWnd;
 
 Application::Application(LPCWSTR appName)
 	: 
 	m_appName(appName),
 	m_bAppWantsExit(false),
-	//m_dt(1000 / (double)240),
 	m_dt(1 / (double)60),
 	m_maxSkipFrames(10)
 {
 
-
-	DirectXDevice::Create();
+	Engine::Create();
+	//DirectXDevice::Create();
 	// template 
 
 
@@ -23,38 +22,24 @@ Application::Application(LPCWSTR appName)
 
 Application::~Application()
 {
-
+	Engine::Destroy();
 }
 
-bool Application::Init(HINSTANCE hInstance, int nCmdShow)
+bool Application::Init(HINSTANCE hInstance, int nCmdShow, EngineConfig engineConfig)
 {
 	m_hInstance = hInstance;
 
-	// TODO : File로 읽어들이기
-	//Settings::Engine settings;
-	//settings.logger = Settings::Logger{ true, true };
-	//settings.window = Settings::Window
-	//{
-	//	WinMaxWidth,
-	//	WinMaxHeight,
-	//	false,
-	//	true
-	//};
-	//// todo : settings.sceneNames
-
-
 	// LOG
 	InitLoggingService();
-	Engine::Create();	
+	
 
 	// TODO : ENGINE->Initialize
 	// TODO : ENGINE->Load
 	// WINDOW
 	InitWindow();
-	DirectXDevice::Get()->Init(m_hWnd);
-	ShowWindow(m_hWnd, nCmdShow);
-	ENGINE->Initialize(m_hWnd);
 
+	ShowWindow(m_hWnd, nCmdShow);
+	ENGINE->Initialize(m_hWnd, engineConfig);
 	ENGINE->Load();
 
 
@@ -206,7 +191,7 @@ void Application::UpdateWindowDimensions(int w, int h)
 void Application::InitWindow()
 {
 	g_pAppHandle = this;
-
+	
 	WNDCLASSEX wndClass;
 
 	wndClass.cbClsExtra = 0;
@@ -262,105 +247,7 @@ void Application::InitWindow()
 
 	ShowCursor(true);
 
-	//int width, height;
-	//int posX, posY;				// window position
-	//// global handle
-	//g_pAppHandle = this;
-	//
-	//WNDCLASSEX wc = {};
-	//wc.style = CS_HREDRAW | CS_VREDRAW | CS_OWNDC;
-	//wc.lpfnWndProc = WndProc;
-	//wc.cbClsExtra = 0;
-	//wc.cbWndExtra = 0;
-	//wc.hInstance = m_hInstance;
-	//wc.hIcon = LoadIcon(NULL, IDI_WINLOGO);
-	//wc.hIconSm = wc.hIcon;
-	//wc.hCursor = LoadCursor(NULL, IDC_ARROW);
-	//wc.hbrBackground = (HBRUSH)GetStockObject(BLACK_BRUSH);
-	//wc.lpszMenuName = NULL;
-	//wc.lpszClassName = m_appName;
-	//wc.cbSize = sizeof(WNDCLASSEX);
-
-	//WORD wHr = RegisterClassEx(&wc);
-	//DWORD error =  GetLastError();
-	//assert(wHr != 0);
-
-
-
-	//// get client desktop resolution
-	//width = GetSystemMetrics(SM_CXSCREEN);
-	//height = GetSystemMetrics(SM_CYSCREEN);
-	//// TEST
-	//width = WinMaxWidth;
-	//height = WinMaxHeight;
-
-
-
-	//// set screen settings
-	////if (windowSettings.fullScreen)
-	//if(false)
-	//{
-	//	DEVMODE dmScreenSettings;
-	//	memset(&dmScreenSettings, 0, sizeof(dmScreenSettings));
-	//	dmScreenSettings.dmSize = sizeof(dmScreenSettings);
-	//	dmScreenSettings.dmPelsWidth = (unsigned long)width;
-	//	dmScreenSettings.dmPelsHeight = (unsigned long)height;
-	//	dmScreenSettings.dmBitsPerPel = 32;
-	//	dmScreenSettings.dmFields = DM_BITSPERPEL | DM_PELSWIDTH | DM_PELSHEIGHT;
-	//	ChangeDisplaySettings(&dmScreenSettings, CDS_FULLSCREEN);
-
-	//	posX = posY = 0;
-	//}
-	//else
-	//{
-	//	//width = std::min(windowSettings.width, width);
-	//	//height = std::min(windowSettings.height, height);
-
-	//	//if (width != windowSettings.width || height != windowSettings.height)
-	//	//{
-	//	//	/*Log::Warning("Resolution not supported (%dx%d): Fallback to (%dx%d)"
-	//	//		, windowSettings.width, windowSettings.height
-	//	//		, width, height
-	//	//	);*/
-	//	//	//TODO : LOG
-
-	//	//	windowSettings.width = width;
-	//	//	windowSettings.height = height;
-	//	//}
-
-	//	posX = (GetSystemMetrics(SM_CXSCREEN) - width) / 2;
-	//	posY = (GetSystemMetrics(SM_CYSCREEN) - height) / 2;
-	//}
-
-	//// create window with screen settings
-
-	///*m_hWnd = CreateWindowEx
-	//(
-	//	WS_EX_APPWINDOW,
-	//	m_appName,
-	//	m_appName,
-	//	WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_OVERLAPPEDWINDOW,
-	//	CW_USEDEFAULT,
-	//	CW_USEDEFAULT,
-	//	CW_USEDEFAULT,
-	//	CW_USEDEFAULT,
-	//	NULL,
-	//	(HMENU)NULL,
-	//	m_hInstance,
-	//	NULL
-	//);
-	//DWORD error2 = GetLastError();*/
-	//m_hWnd = CreateWindowEx(
-	//	WS_EX_APPWINDOW,			// Forces a top-level window onto the taskbar when the window is visible.
-	//	m_appName,					// class name
-	//	m_appName,					// Window name
-	//	WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_OVERLAPPEDWINDOW,					// Window style
-	//	posX, posY, width, height,	// Window position and dimensions
-	//	NULL, NULL,					// parent, menu
-	//	m_hInstance, NULL
-	//);
-	//assert(m_hWnd != NULL);
-	//DWORD dw = GetLastError();
+	::g_hWnd = m_hWnd;
 }
 
 void Application::ShutdownWindows()

@@ -28,7 +28,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -85,7 +85,7 @@
       <AdditionalIncludeDirectories>./;./Source/;./Include/;../Reference/Include/;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>C:\Dev\HyEngineSample\Reference\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\Reference\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>HyEngine.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -128,12 +128,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Include\Fighter2.h" />
     <ClInclude Include="Include\stdafx.h" />
     <ClInclude Include="Include\Test2.h" />
+    <ClInclude Include="Include\TestComponent2.h" />
+    <ClInclude Include="Include\TestScene2.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Fighter2.cpp" />
     <ClCompile Include="Source\Main.cpp" />
     <ClCompile Include="Source\Test2.cpp" />
+    <ClCompile Include="Source\TestComponent2.cpp" />
+    <ClCompile Include="Source\TestScene2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

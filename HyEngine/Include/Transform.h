@@ -1,10 +1,9 @@
 #pragma once
-#include "Component.h"
 
 using namespace LinearMath;
 
 
-class Transform/* : public Component*/
+class ENGINE_DLL Transform/* : public Component*/
 {
 public:
 	//----------------------------------------------------------------------------------------------------------------

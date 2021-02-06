@@ -24,12 +24,20 @@ struct RenderType
 //	LateUpdate = 0x0002,
 //	None = 0x0004,
 //};
-struct LogicType
+struct ENGINE_DLL BehaviourType
 {
 	static const DWORD Update = 0x0001;
 	static const DWORD LateUpdate = 0x0002;
 	static const DWORD None = 0x0004;
 };
+
+namespace Tags
+{
+	static const std::wstring Default = L"Default";
+	static const std::wstring Player = L"Player";
+	static const std::wstring Obstacle = L"Obstacle";
+	static const std::wstring Enemy = L"Enemy";
+}
 
 enum class Layers
 {
@@ -37,4 +45,16 @@ enum class Layers
 	UI = 0x0002,
 
 
+};
+
+enum class ERenderType
+{
+	RenderOpaque,
+	RenderAlpha,
+};
+
+enum class EUpdateResult
+{
+	Continue,
+	Stop,
 };

@@ -4,57 +4,76 @@
 #include "IObjectFactory.h"
 #include "GeometryFactory.h"
 #include "Fighter.h"
-TestScene::TestScene()
-	: Scene()
-{
-
-}
-
-
-TestScene::~TestScene()
-{
-}
-
-
-
-void TestScene::Load()
-{
-//#pragma region Create Prototype
-//	IObjectFactory * factory = new GeometryFactory();
-//	TriangleObj::CreatePrototype
-//	(
-//		L"Triangle_Test", 
-//		factory, 
-//		(void*)&GeometryFactory::Triangle
-//	);
-//	delete factory;
-//#pragma endregion
-
-
-
-//#pragma region AddGameObejcts
-//	AddGameObject(L"Triangle_Test");
-//#pragma endregion 
-
-
-//#pragma region Render list set
+#include "Renderer.h"
+//TestScene::TestScene()
+//	: Scene()
+//{
 //
+//}
+//
+//
+//TestScene::~TestScene()
+//{
+//}
+//
+//
+//
+//void TestScene::Load()
+//{
+//
+//
+//#pragma region Create Example
+//	/*
+//	// 아래 예제는 active false로 시작하는 예
+//	auto obj = Fighter::Create(this);
+//	obj->SetActive(false);
+//	m_gameObjectsOnScene.push_back(obj);
+//	*/
+//
+//
+//	
+//	// 아래 예제는 active true로 시작하는 예
+//	auto obj = Fighter::Create(this);
+//	obj->SetActive(true);
+//	m_gameObjectsOnScene.push_back(obj);
+//	
+//
+//	AddGameObject(Fighter::Create(this));
 //#pragma endregion
-
-
-	m_pObjects.push_back(Fighter::Create());
-}
-
-void TestScene::Unload()
-{
-}
-
-void TestScene::RenderUI() const
-{
-}
-
-void TestScene::Update()
-{
-
-}
-
+//
+//
+//}
+//
+//void TestScene::Unload()
+//{
+//	for (auto obj : m_gameObjectsOnScene)
+//	{
+//		obj->Destroy(obj);
+//	}
+//}
+//
+//void TestScene::RenderUI() const
+//{
+//
+//}
+//
+//void TestScene::Update()
+//{
+//
+//}
+//
+//void TestScene::RenderObject(Renderer * renderer)
+//{
+//	renderer->SetOpaqueContext();
+//	for (auto& renderObj : m_gameObjectsOnScene)
+//	{
+//		if (renderObj->GetActive())
+//		{
+//
+//		}
+//	}
+//
+//
+//
+//}
+//

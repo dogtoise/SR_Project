@@ -10,7 +10,7 @@ namespace LinearMath
 #define RAD2DEG (180.0f / XM_PI)
 #define PI		XM_PI
 #define PI_DIV2 XM_PIDIV2
-	struct Vector3
+	struct ENGINE_DLL Vector3
 	{
 		static Vector3 Rand();
 		static const D3DXVECTOR3 Zero;
@@ -60,7 +60,7 @@ namespace LinearMath
 		D3DXVECTOR3 m_vector3;
 	};
 
-	struct Vector2
+	struct ENGINE_DLL Vector2
 	{
 		static const D3DXVECTOR2 Zero;
 		static const D3DXVECTOR2 Up;
@@ -100,7 +100,7 @@ namespace LinearMath
 		D3DXVECTOR2 m_vector;
 	};
 
-	class Quaternion
+	class ENGINE_DLL Quaternion
 	{
 	public :
 		static Quaternion Identity();

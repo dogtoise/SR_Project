@@ -1,6 +1,6 @@
 #pragma once
 
-struct SimpleVertex
+struct ENGINE_DLL SimpleVertex
 {
 	SimpleVertex() {}
 
@@ -13,7 +13,7 @@ struct SimpleVertex
 	static const DWORD FVF;
 };
 
-struct ColorVertex
+struct ENGINE_DLL ColorVertex
 {
 	ColorVertex() {}
 
@@ -29,7 +29,7 @@ struct ColorVertex
 	static const DWORD FVF;
 };
 
-struct VertexNormal 
+struct ENGINE_DLL VertexNormal
 {
 	VertexNormal() {}
 
@@ -43,7 +43,7 @@ struct VertexNormal
 	static const DWORD FVF;
 };
 
-struct TextureVertex
+struct ENGINE_DLL TextureVertex
 {
 	TextureVertex() {}
 

@@ -62,7 +62,7 @@ if (p)\
 
 
 #include "Settings.h"
-#include "DataStructures.h"
+
 
 // Utilities
 #include "Singleton.h"
@@ -73,6 +73,7 @@ if (p)\
 #include "MathUtils.h"
 #include "LinearMath.h"
 #include "UIDGen.h"
+#include "ObjectPool.h"
 
 
 // Core
@@ -80,19 +81,17 @@ if (p)\
 #include "Enumerators.h"
 #include "Timer.h"
 #include "DirectXDevice.h"
-#include "Application.h"
 #include "SceneView.h"
 #include "Scene.h"
+#include "DataStructures.h"
 #include "Transform.h"
+#include "UpdateDispatcher.h"
+#include "Application.h"
+#include "GameManager.h"
 #include "Engine.h"
 
 #define ENGINE Engine::Get()
 #define KEYBOARD Engine::Get()->GetKeyboard()
 #define MOUSE Engine::Get()->GetMouse()
 #define TIMER Engine::Get()->GetTimer()
-
-
-
-
-
 

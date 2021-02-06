@@ -1,7 +1,10 @@
 #pragma once
 
 
-
+struct EngineDesc
+{
+	std::vector<Scene*> scenes;
+};
 
 class ENGINE_DLL Engine
 {
@@ -13,11 +16,10 @@ private:
 	~Engine();
 
 public :
-	bool Initialize(HWND hWnd);
+	bool Initialize(HWND hWnd, EngineConfig engineConfig);
 	void Exit();
 
 	bool Load();
-	//void SimulateAndRenderFrame();
 	void SimulateFrame();
 	void RenderFrame();
 
@@ -29,15 +31,17 @@ public :
 	inline Timer* GetTimer() const { return m_pTimer; }
 
 public :
-	class IScene* GetActiveScene();
+	class Scene* GetActiveScene();
 private :
-	bool LoadSceneFromFile();
-	bool LoadScene(int level);
+	
+
+	// °ø¿ë ½¦ÀÌ´õ > ?
 	bool LoadShaders();
 
-	void PreRender();
-	void Render();
-	void RenderUI();
+	void LoadScenes();
+
+
+	//void RenderUI();
 	void RenderDebug();
 
 
@@ -50,9 +54,6 @@ private :
 	// static 
 	static Settings::Engine sEngineSettigns;
 
-	// systems
-	// TODO : INPUT
-	// TODO : RENDERER
 	Utility::Keyboard *m_pKeyboard;
 	Utility::Mouse *m_pMouse;
 	Timer *m_pTimer;
@@ -63,22 +64,16 @@ private :
 
 	// engine state
 	bool m_bIsPaused;
-	EngineConfig m_engineConfig;
-	unsigned long long m_frameCount;
-
-	// THREADED LOADING
-	bool m_bLoading;
-	// level is scene
-	std::queue<int> m_levelLoadQueue;
-
-
-private :
-	//----------------------------------------------------------------------------------------------------------------
-	// SCENE
-	//----------------------------------------------------------------------------------------------------------------
-	std::vector<Scene*> m_pScenes;
-	Scene* m_pActiveScene;
 
 	int m_currentLevel;
+	// THREADED LOADING
+	bool m_bLoading;
 
+private :
+	
+	class Renderer * m_pRenderer;
+
+	EngineConfig engineConfig;
+	class Scene* m_pActiveScene;
+	std::vector<Scene*> m_scenes;
 };

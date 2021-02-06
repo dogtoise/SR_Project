@@ -7,6 +7,15 @@
     <Filter Include="Entry">
       <UniqueIdentifier>{10d6122d-448d-49a4-8dc4-3e60348bae9d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{4674e166-b81e-4396-a248-2a2c3228432b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{d42251d0-1d78-4cf0-8bb1-18dab4014063}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component">
+      <UniqueIdentifier>{48022d61-1720-485e-a011-69642d5f670f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Test2.cpp">
@@ -15,11 +24,29 @@
     <ClCompile Include="Source\Main.cpp">
       <Filter>Entry</Filter>
     </ClCompile>
+    <ClCompile Include="Source\TestScene2.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Fighter2.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TestComponent2.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\Test2.h">
       <Filter>TestFilter</Filter>
     </ClInclude>
     <ClInclude Include="Include\stdafx.h" />
+    <ClInclude Include="Include\TestScene2.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Fighter2.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\TestComponent2.h">
+      <Filter>Component</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

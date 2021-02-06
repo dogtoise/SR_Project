@@ -1,5 +1,5 @@
 #include "StandardEngineFramework.h"
-#include "..\Include\Transform.h"
+#include "Transform.h"
 using namespace LinearMath;
 
 
@@ -86,6 +86,24 @@ D3DXMATRIX Transform::NormalMatrix(const D3DXMATRIX & world)
 	D3DXMatrixInverse(&nrm, &det, &nrm);
 	D3DXMatrixTranspose(&nrm, &nrm);
 	return nrm;
+}
+
+Transform * Transform::Find(std::wstring name)
+{
+	return nullptr;
+}
+
+Transform * Transform::GetChild(int index)
+{
+	return nullptr;
+}
+
+void Transform::LookAt(const Transform & target)
+{
+}
+
+void Transform::Rotate(const Vector3 & eulers)
+{
 }
 
 void Transform::SetParent(Transform * parent)

@@ -73,10 +73,6 @@
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DH);</IncludePath>
     <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;$(DL);</LibraryPath>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DH);</IncludePath>
-    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;$(DL);</LibraryPath>
-  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -95,7 +91,6 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>./;./Source/;./Include/;../Reference/Include/;</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -126,6 +121,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Include\Application.h" />
+    <ClInclude Include="Include\BehaviourSystem.h" />
     <ClInclude Include="Include\BrainTree.h" />
     <ClInclude Include="Include\Camera.h" />
     <ClInclude Include="Include\Component.h" />
@@ -133,6 +129,7 @@
     <ClInclude Include="Include\DataStructures.h" />
     <ClInclude Include="Include\DirectXDevice.h" />
     <ClInclude Include="Include\Engine.h" />
+    <ClInclude Include="Include\EngineConfigurer.h" />
     <ClInclude Include="Include\Enumerators.h" />
     <ClInclude Include="Include\EventDispatcher.h" />
     <ClInclude Include="Include\EventTypes.h" />
@@ -144,19 +141,19 @@
     <ClInclude Include="Include\IndexBuffer.h" />
     <ClInclude Include="Include\IObject.h" />
     <ClInclude Include="Include\IObjectFactory.h" />
+    <ClInclude Include="Include\IRenderable.h" />
     <ClInclude Include="Include\IScene.h" />
     <ClInclude Include="Include\Keyboard.h" />
     <ClInclude Include="Include\Layer.h" />
     <ClInclude Include="Include\LinearMath.h" />
-    <ClInclude Include="Include\LogicManager.h" />
     <ClInclude Include="Include\MathUtils.h" />
     <ClInclude Include="Include\Mouse.h" />
     <ClInclude Include="Include\Object.h" />
+    <ClInclude Include="Include\GameManager.h" />
     <ClInclude Include="Include\ObjectPool.h" />
     <ClInclude Include="Include\ObjLoader.h" />
     <ClInclude Include="Include\Path.h" />
     <ClInclude Include="Include\Renderer.h" />
-    <ClInclude Include="Include\RenderManager.h" />
     <ClInclude Include="Include\RenderStructs.h" />
     <ClInclude Include="Include\Scene.h" />
     <ClInclude Include="Include\SceneView.h" />
@@ -167,21 +164,25 @@
     <ClInclude Include="Include\Settings.h" />
     <ClInclude Include="Include\CString.h" />
     <ClInclude Include="Include\Test.h" />
+    <ClInclude Include="Include\TestComponent.h" />
     <ClInclude Include="Include\TestScene.h" />
     <ClInclude Include="Include\Timer.h" />
     <ClInclude Include="Include\Transform.h" />
     <ClInclude Include="Include\TriangleComponent.h" />
     <ClInclude Include="Include\TriangleObj.h" />
     <ClInclude Include="Include\UIDGen.h" />
+    <ClInclude Include="Include\UpdateDispatcher.h" />
     <ClInclude Include="Include\VertexBuffer.h" />
     <ClInclude Include="Include\VertexTypes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Application.cpp" />
+    <ClCompile Include="Source\BehaviourSystem.cpp" />
     <ClCompile Include="Source\Camera.cpp" />
     <ClCompile Include="Source\Component.cpp" />
     <ClCompile Include="Source\DirectXDevice.cpp" />
     <ClCompile Include="Source\Engine.cpp" />
+    <ClCompile Include="Source\EngineConfigurer.cpp" />
     <ClCompile Include="Source\EventDispatcher.cpp" />
     <ClCompile Include="Source\Fighter.cpp" />
     <ClCompile Include="Source\GameObject.cpp" />
@@ -196,24 +197,25 @@
     <ClCompile Include="Source\Layer.cpp" />
     <ClCompile Include="Source\LinearMath.cpp" />
     <ClCompile Include="Source\Log.cpp" />
-    <ClCompile Include="Source\LogicManager.cpp" />
     <ClCompile Include="Source\MathUtils.cpp" />
     <ClCompile Include="Source\Mouse.cpp" />
     <ClCompile Include="Source\Object.cpp" />
+    <ClCompile Include="Source\GameManager.cpp" />
     <ClCompile Include="Source\Path.cpp" />
     <ClCompile Include="Source\Renderer.cpp" />
-    <ClCompile Include="Source\RenderManager.cpp" />
     <ClCompile Include="Source\RenderStructs.cpp" />
     <ClCompile Include="Source\Scene.cpp" />
     <ClCompile Include="Source\ServiceLocator.cpp" />
     <ClCompile Include="Source\CString.cpp" />
     <ClCompile Include="Source\Test.cpp" />
+    <ClCompile Include="Source\TestComponent.cpp" />
     <ClCompile Include="Source\TestScene.cpp" />
     <ClCompile Include="Source\Timer.cpp" />
     <ClCompile Include="Source\Transform.cpp" />
     <ClCompile Include="Source\TriangleComponent.cpp" />
     <ClCompile Include="Source\TriangleObj.cpp" />
     <ClCompile Include="Source\UIDGen.cpp" />
+    <ClCompile Include="Source\UpdateDispatcher.cpp" />
     <ClCompile Include="Source\VertexBuffer.cpp" />
     <ClCompile Include="Source\VertexTypes.cpp" />
   </ItemGroup>

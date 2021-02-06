@@ -1,4 +1,5 @@
 #pragma once
+#include "StandardEngineFramework.h"
 
 struct RendererState
 {
@@ -18,8 +19,12 @@ struct SceneStats
 
 };
 
-struct EngineConfig
+struct ENGINE_DLL EngineConfig
 {
 	bool bShowBoundingBoxes;
+	bool bShowDebuger;
 	bool bShowProfiler;
+
+	std::vector<Scene*> scenes = {};
+	int defaultSceneIndex;
 };

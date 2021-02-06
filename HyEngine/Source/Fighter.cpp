@@ -2,14 +2,21 @@
 #include "Fighter.h"
 #include "ObjLoader.h"
 #include "VertexTypes.h"
+#include "TestComponent.h"
 
-Fighter::Fighter()
+Fighter::Fighter(Scene* scene)
+	: GameObject(ERenderType::RenderOpaque, scene,Tags::Player)
 {
+
+	AddComponent(TestComponent::Create(this));
+
+
 }
 
 
 Fighter::~Fighter()
 {
+
 }
 
 void Fighter::Initialize()
@@ -17,6 +24,8 @@ void Fighter::Initialize()
 	objl::Loader loader;
 	loader.LoadFile("../Resources/knife_LOD2.obj");
 	m_pTransform = new Transform();
+	
+
 
 	//std::vector <objl::Vertex > vecs = loader.LoadedVertices.size();
 
@@ -132,13 +141,6 @@ void Fighter::Initialize()
 	DEVICE->SetSamplerState(1, D3DSAMP_MIPFILTER, D3DTEXF_LINEAR);
 }
 
-void Fighter::Update()
-{
-}
-
-void Fighter::LateUpdate()
-{
-}
 
 void Fighter::Render()
 {
@@ -224,3 +226,4 @@ void Fighter::Render()
 	DEVICE->DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, 0, vertexNum, 0, primCount);
 
 }
+

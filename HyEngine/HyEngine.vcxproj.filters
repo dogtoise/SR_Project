@@ -43,6 +43,9 @@
     <Filter Include="Graphics">
       <UniqueIdentifier>{2b6f534b-95ac-40e9-9a60-f55daf9b0c9f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Behaviour">
+      <UniqueIdentifier>{773fbacb-3926-44af-b90c-6477f542809d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\Test.h">
@@ -152,12 +155,6 @@
     <ClInclude Include="Include\GameObjectManager.h">
       <Filter>Manager</Filter>
     </ClInclude>
-    <ClInclude Include="Include\LogicManager.h">
-      <Filter>Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="Include\RenderManager.h">
-      <Filter>Manager</Filter>
-    </ClInclude>
     <ClInclude Include="Include\UIDGen.h">
       <Filter>Utilities</Filter>
     </ClInclude>
@@ -190,6 +187,24 @@
     </ClInclude>
     <ClInclude Include="Include\CString.h">
       <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BehaviourSystem.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\EngineConfigurer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\IRenderable.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GameManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\UpdateDispatcher.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\TestComponent.h">
+      <Filter>Component</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -286,12 +301,6 @@
     <ClCompile Include="Source\GameObjectManager.cpp">
       <Filter>Manager</Filter>
     </ClCompile>
-    <ClCompile Include="Source\LogicManager.cpp">
-      <Filter>Manager</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\RenderManager.cpp">
-      <Filter>Manager</Filter>
-    </ClCompile>
     <ClCompile Include="Source\UIDGen.cpp">
       <Filter>Utilities</Filter>
     </ClCompile>
@@ -309,6 +318,21 @@
     </ClCompile>
     <ClCompile Include="Source\CString.cpp">
       <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BehaviourSystem.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\EngineConfigurer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UpdateDispatcher.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TestComponent.cpp">
+      <Filter>Component</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

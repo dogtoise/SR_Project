@@ -1,4 +1,8 @@
 #pragma once
+
+
+extern HWND g_hWnd;
+
 class ENGINE_DLL Application
 {
 public :
@@ -14,7 +18,7 @@ public:
 	Application(LPCWSTR appName);
 	~Application();
 
-	bool Init(HINSTANCE hInstance, int nCmdShow);
+	bool Init(HINSTANCE hInstance, int nCmdShow, EngineConfig engineConfig);
 	void Run();
 	void Exit();
 
